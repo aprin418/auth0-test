@@ -1,0 +1,26 @@
+{
+  "name": "auth0-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aprin418/auth0-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aprin418/auth0-test/issues"
+  },
+  "homepage": "https://github.com/aprin418/auth0-test#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-openid-connect": "^2.7.1",
+    "nodemon": "^2.0.15"
+  }
+}
