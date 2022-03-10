@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-require("dotenv").config;
+require("dotenv").config();
 
 const { auth, requiresAuth } = require("express-openid-connect");
 
@@ -8,10 +8,10 @@ app.use(
   auth({
     authRequired: false,
     auth0Logout: true,
-    baseURL: "http://localhost:3000",
-    clientID: "BcrlibLDw2WWGtNfaiNt5QAiVqszpB4b",
-    issuerBaseURL: "https://dev-68vge8o4.us.auth0.com",
-    secret: "KuRC6fpRGDvV8XT3EW-tBQbGkjhZyoZkPDsheJdl_aYjuwffMuNSfrkzCJJXvdx1",
+    baseURL: process.env.BASE_URL,
+    clientID: process.env.CLIENT_ID,
+    issuerBaseURL: process.env.ISSUER_BASE_URL,
+    secret: process.env.SECRET,
   })
 );
 
